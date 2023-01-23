@@ -1,0 +1,21 @@
+cleandata= pd.read_sql(''' SELECT CustomerID,
+
+          MAX(InvoiceDate) AS last_order_date,
+
+          COUNT(*) AS count_order,
+
+          SUM(UnitPrice*Quantity) AS Totalprice
+
+      FROM Online_Retail
+
+      WHERE InvoiceNo NOT LIKE '%C%'
+
+      AND CustomerID IS NOT NULL
+
+      AND Description IS NOT NULL
+
+      AND UnitPrice >= 0
+
+      AND Quantity >= 0
+
+      GROUP BY CustomerID ''', conn)
