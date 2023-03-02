@@ -2,13 +2,13 @@
 This script performs data analysis on retail data and applies clustering algorithms to segment customers based on their transactional behavior.
 
 ## Table of Contents
-- General Info
-- Technologies
-- Dataset
-- Content
-- Preprocessing
-- Clustering Algorithms
-- Results
+- ### General Info
+- ### Technologies
+- ### Dataset
+- ### Content
+- ### Preprocessing
+- ### Clustering Algorithms
+- ### Results
 ### General Info
 This script is developed in Python in Google Colab environment. It reads an online retail dataset, performs exploratory data analysis, and applies clustering algorithms to segment customers based on their transactional behavior.
 
